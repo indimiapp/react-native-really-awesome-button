@@ -2,11 +2,11 @@ import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import {
   ActivityIndicator,
-  TouchableWithoutFeedback,
   View,
   Animated,
   ViewPropTypes
 } from "react-native";
+import { TouchableWithoutFeedback } from "react-native-gesture-handler";
 import { animateTiming, animateElastic, animateSpring } from "./helpers";
 import { styles, getStyles } from "./styles";
 import {
