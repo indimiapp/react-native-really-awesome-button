@@ -4,7 +4,6 @@ import {
   ActivityIndicator,
   TouchableWithoutFeedback,
   View,
-  Pressable,
   Animated,
   ViewPropTypes
 } from "react-native";
@@ -447,7 +446,7 @@ export default class Button extends React.Component {
     const { ExtraContent, style, activityColor } = this.props;
 
     return (
-        <Pressable
+        <TouchableWithoutFeedback
     testID="aws-btn-content-view"
     style={{flex:1, justifyContent:"center", alignItems:"center"}}
     onPressIn={this.pressIn}
@@ -524,7 +523,7 @@ export default class Button extends React.Component {
   </View>
     </Animated.View>
     </Animated.View>
-    </Pressable>
+    </TouchableWithoutFeedback>
   );
   }
 }
